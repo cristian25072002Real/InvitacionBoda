@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatriz & Gerardo - Nuestra Boda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="pantalla-sobre" class="full-screen">
+        <div class="contenedor-imagen">
+            <img src="sobre_invitacion.jpeg" alt="Portada" class="img-portada">
+            <div class="zona-clic" onclick="abrirInvitacion()"></div>
+        </div>
+    </div>
+
+    <div id="pantalla-invitacion" class="full-screen hidden">
+        <div class="scroll-container">
+            
+            <audio id="musicaBoda" loop>
+                <source src="musica_boda.mp3" type="audio/mpeg">
+            </audio>
+
+            <section class="seccion reveal">
+                <img src="parte_1_fondo_original.png" class="img-invitacion">
+            </section>
+
+            <section class="seccion reveal">
+                <img src="parte_2_fondo_original.png" class="img-invitacion">
+            </section>
+
+            <section class="seccion reveal seccion-musica-reloj">
+                <img src="parte_3_fondo_original.png" class="img-invitacion">
+
+                <div class="btn-play" onclick="toggleMusica()">
+                    <div id="icono-musica" class="play-icon"></div>
+                </div>
+
+                <div class="reloj-container">
+                    <div class="reloj-bloque">
+                        <span id="dias">00</span>
+                        <small>Días</small>
+                    </div>
+                    <div class="reloj-bloque">
+                        <span id="horas">00</span>
+                        <small>Horas</small>
+                    </div>
+                    <div class="reloj-bloque">
+                        <span id="minutos">00</span>
+                        <small>Min.</small>
+                    </div>
+                    <div class="reloj-bloque">
+                        <span id="segundos">00</span>
+                        <small>Seg.</small>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion reveal seccion-galeria">
+                <img src="parte_4_fondo_original.png" class="img-invitacion">
+                <div class="contenedor-galeria">
+                    <div class="marco-fotos">
+                        <img src="foto_carrusel_1.jpeg" class="foto-boda active">
+                        <img src="foto_carrusel_2.jpeg" class="foto-boda">
+                        <img src="foto_carrusel_3.jpeg" class="foto-boda">
+                        <img src="foto_carrusel_4.jpeg" class="foto-boda">
+                        <img src="foto_carrusel_5.jpeg" class="foto-boda">
+                        <img src="foto_carrusel_6.jpeg" class="foto-boda">
+                        <img src="foto_carrusel_7.jpeg" class="foto-boda">
+                        <img src="foto_carrusel_8.jpeg" class="foto-boda">
+                    </div>
+                    <div class="puntos-navegacion">
+                        <span class="punto active"></span>
+                        <span class="punto"></span>
+                        <span class="punto"></span>
+                        <span class="punto"></span>
+                        <span class="punto"></span>
+                        <span class="punto"></span>
+                        <span class="punto"></span>
+                        <span class="punto"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion reveal seccion-ubicacion">
+                <img src="parte_5_fondo_original.png" class="img-invitacion">
+                <a href="https://maps.google.com/..." target="_blank" class="area-clic btn-iglesia"></a>
+                <a href="https://maps.google.com/..." target="_blank" class="area-clic btn-salon"></a>
+            </section>
+
+            <section class="seccion reveal"><img src="parte_6_fondo_original.png" class="img-invitacion"></section>
+            <section class="seccion reveal"><img src="parte_7_fondo_original.png" class="img-invitacion"></section>
+            <section class="seccion reveal"><img src="parte_8_fondo_original.png" class="img-invitacion"></section>
+
+            <section class="seccion reveal seccion-confirmar">
+                <img src="parte_9_fondo_original.png" class="img-invitacion">
+                <a href="https://wa.me/522351013738?text=..." target="_blank" class="btn-confirmar"></a>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
