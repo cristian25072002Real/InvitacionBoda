@@ -233,7 +233,7 @@ body.scroll-active {
 .punto {
     width: 8px;
     height: 8px;
-    background: #a67c7c;
+    background: #808000;
     border-radius: 50%;
     opacity: 0.3;
     transition: 0.3s;
@@ -244,7 +244,8 @@ body.scroll-active {
 .punto.active {
     opacity: 1;
     transform: scale(1.3);
-    box-shadow: 0 0 10px rgba(166, 124, 124, 0.5);
+    box-shadow: 0 0 10px rgba(99, 107, 47, 0.5);
+
 }
 
 /* BOTONES UBICACIÓN Y CONFIRMACIÓN */
